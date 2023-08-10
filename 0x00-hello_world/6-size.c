@@ -1,6 +1,6 @@
 /* print size of each data types */
 #include<stdio.h>
-main ()
+main (void)
 {
 /* initialization of each data type */	
 char a;
