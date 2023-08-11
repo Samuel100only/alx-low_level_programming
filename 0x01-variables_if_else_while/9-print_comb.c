@@ -13,8 +13,8 @@ int main(void)
 	if (alp <= 8)
 	{
 	putchar(',');
-	}
 	putchar(32);
+	}
 	alp++;
 	}
 	putchar('\n');
