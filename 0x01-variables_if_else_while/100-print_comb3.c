@@ -5,17 +5,21 @@
  */
 int main(void)
 {
-	int alp = 0;
+	int x;
+	int y;
 
-	while (alp <= 9)
+	for (x = 0; x <= 8; x++)
 	{
-	putchar(alp + 48);
-	if (alp <= 8)
+	for (y = 0; y <= 9; y++)
+	{
+	putchar(x + 48);
+	putchar(y + 48);
+	if (y < 8)
 	{
 	putchar(',');
 	putchar(32);
 	}
-	alp++;
+	}
 	}
 	putchar('\n');
 	return (0);
