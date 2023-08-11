@@ -10,7 +10,10 @@ int main(void)
 	while (alp <= 9)
 	{
 	putchar(alp + 48);
+	if (alp <= 8)
+	{
 	putchar(',');
+	}
 	putchar(32);
 	alp++;
 	}
