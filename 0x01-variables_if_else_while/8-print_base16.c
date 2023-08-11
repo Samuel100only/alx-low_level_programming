@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print out all ascii value 
+ * main - print out all ascii value
  * Return: 0 (success)
  */
 int main(void)
