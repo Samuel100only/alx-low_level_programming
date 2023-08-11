@@ -8,7 +8,7 @@
 int main(void)
 {
 	int n;
-	unsigned int z;
+	unsigned short int z;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -20,7 +20,7 @@ int main(void)
 	}
 	else if (z > 5)
 	{
-	printf("Last digit of%d is %u and is greater than 5\n", n);
+	printf("Last digit of%d is %u and is greater than 5\n", n, z);
 	}
 	else if (z < 6)
 	{
