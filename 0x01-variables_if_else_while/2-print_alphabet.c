@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - print out the lower alphabet
- * return: 0
+ *main - return 0 after print all alphabet
+ * Return: 0 (success)
  */
 int main(void)
 {
