@@ -5,9 +5,9 @@
  */
 int main(void)
 {
-	char nums = '0';
+	char nums = 0;
 
-	while (nums < '10')
+	while (nums < 10)
 	{
 	putchar(nums);
 	nums++;
