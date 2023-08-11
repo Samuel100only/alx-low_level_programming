@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - print out all alphabet ,except e and q
- * return 0
+ * Return 0
  */
 int main(void)
 {
