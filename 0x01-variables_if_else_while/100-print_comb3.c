@@ -14,7 +14,7 @@ int main(void)
 	{
 	putchar(x + 48);
 	putchar(y + 48);
-	if (y < 9 && x < 8)
+	if (y < 9 || x < 8)
 	{
 	putchar(',');
 	putchar(32);
