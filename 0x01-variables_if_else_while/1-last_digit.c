@@ -8,7 +8,7 @@
 int main(void)
 {
 	int n;
-	unsigned short int z;
+	int z;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -16,15 +16,15 @@ int main(void)
 	z = n % 10; /*take out the last digit */
 	if (z == 0)
 	{
-	printf("Last digit of %d is 0\n", n);
+	printf("Last digit of %d is %d and is 0\n", n, z);
 	}
 	else if (z > 5)
 	{
-	printf("Last digit of %d is %u and is greater than 5\n", n, z);
+	printf("Last digit of %d is %d and is greater than 5\n", n, z);
 	}
 	else if (z < 6)
 	{
-	printf("Last digit of %d is %u and ", n, z);
+	printf("Last digit of %d is %d and ", n, z);
 	printf("is less than 6 and not 0\n");
 	}
 	return (0);
