@@ -18,7 +18,7 @@ int main(void)
 	{
 	for (z = 0; z <= 9; z++)
 	{
-	if ((w != y) || (x != z))
+	if ((w != y) && (x != z))
 	{
 	putchar(w + 48);
 	putchar(x + 48);
