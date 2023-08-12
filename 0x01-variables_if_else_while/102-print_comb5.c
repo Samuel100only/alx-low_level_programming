@@ -18,6 +18,8 @@ int main(void)
 	{
 	for (z = 0; z <= 9; z++)
 	{
+	if ((w != y) || (x != z))
+	{
 	putchar(w + 48);
 	putchar(x + 48);
 	putchar(32);
@@ -27,6 +29,7 @@ int main(void)
 	{
 	putchar(',');
 	putchar(32);
+	}
 	}
 	}
 	}
