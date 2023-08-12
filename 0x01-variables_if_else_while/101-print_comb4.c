@@ -20,7 +20,7 @@ int main(void)
 	putchar(x + 48);
 	putchar(y + 48);
 	putchar(z + 48);
-	if (y < 9 || x < 8 || z < 7)
+	if (z < 9 || y < 8 || x < 7)
 	{
 	putchar(',');
 	putchar(32);
