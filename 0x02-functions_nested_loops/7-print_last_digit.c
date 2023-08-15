@@ -13,5 +13,6 @@ int print_last_digit(int c)
 	{
 	y = y * -1;
 	}
+	_putchar(y + '0');
 	return (y);
 }
