@@ -1,19 +1,11 @@
 #include "main.h"
 /**
- * main - print out alphabet in lower case
+ * main - call function print_alphabet
  * Return: 0
+ * print_alphabet - print all lower case alphabet
  */
-void print_alphabet(void);
 
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-/**
- * print_alphabet - print all alpahbet in lower case
- */
-void print_alphabet(void)
+void print_alphabet(void);
 {
 	int x;
 
@@ -22,4 +14,9 @@ void print_alphabet(void)
 		_putchar(x + 'a');
 	}
 	_putchar('\n');
+}
+int main(void)
+{
+	print_alphabet();
+	return (0);
 }
