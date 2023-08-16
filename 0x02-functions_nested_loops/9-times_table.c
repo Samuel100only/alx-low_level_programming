@@ -22,7 +22,7 @@ void times_table(void)
 	_putchar(d + '0');
 	}
 	else
-	{ 
+	{
 	if (b != 0)
 	{
 	_putchar(44);
