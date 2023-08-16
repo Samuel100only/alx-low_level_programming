@@ -28,7 +28,7 @@ else if (n > 98)
 	if (n == 97)
 		{
 		 printf("%d",n);
-		 printf("\n",n);
+		 printf("\n");
 		 break;
 		}
 		else
