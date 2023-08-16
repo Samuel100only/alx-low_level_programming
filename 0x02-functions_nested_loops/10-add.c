@@ -7,7 +7,10 @@
  */
 int add(int x, int y)
 {
-	int x, y;
+	int x;
+	int y;
+	int a;
 
-	return (x + y);
+	a = x + y;
+	return (a);
 }
