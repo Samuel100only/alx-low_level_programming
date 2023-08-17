@@ -9,7 +9,7 @@ void print_numbers(void)
 
 	for (y = 0; y <= 9; y++)
 	{
-		if (!(c == 2 || c == 4))
+		if (!(y == 2 || y == 4))
 		{
 		_putchar(y + '0');
 		}
