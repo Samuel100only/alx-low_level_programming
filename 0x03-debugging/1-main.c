@@ -11,8 +11,8 @@ int main(void)
 
 	printf("Infinite loop incoming :(\n");
 
-	i = 0;
-/*i will never become >10 need increment stament in while loop*/
+	i = 0; /*i will never become >10 need increment stament in while loop*/
+
 	while (i < 10)
 	{
 		putchar(i);
