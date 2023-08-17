@@ -11,11 +11,11 @@ int main(void)
 
 	printf("Infinite loop incoming :(\n");
 
-	i = 0; /*i will never become >10 need increment stament in while loop*/
+	i = 0;
 
 	while (i < 10)
 	{
-		putchar(i);
+	putchar(i);/*i will never become >10 need increment stament in while loop*/
 	}
 
 	printf("Infinite loop avoided! \\o/\n");
