@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_numbers - return number from 0 - 9 and newline chr
- * Return: 0 is sucess
+ * Return: void
  */
 void print_numbers(void)
 {
