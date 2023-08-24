@@ -9,9 +9,19 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int y;
+	int x;
 
+	x = 0;
+	while (*(dest + x) != '\0')
+	{
+	x++;
+	}
 	for (y = 0; y < n; y++)
 	{
+		if (y > x)
+		{
+		break;
+		}
 	*(dest + y) = *(src + y);
 	}
 	return (dest);
