@@ -7,18 +7,18 @@
  */
 void reverse_array(int *a, int n)
 {
-	int b[n];
 	int x;
 	int y;
+	int b[n];
 
 	y = n - 1;
 	for (x = 0; x < n; x++)
 	{
-	b[x] = *(a + y);
+	*(b + x) = *(a + y);
 	y--;
 	}
 	for (x = 0; x < n; x++)
 	{
-	*(a + x) = b[x];
+	*(a + x) = *(b + x);
 	}
 }
