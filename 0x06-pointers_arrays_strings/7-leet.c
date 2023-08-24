@@ -7,6 +7,7 @@
 char *leet(char *srt)
 {
 	int x;
+	int y;
 	char change1[] = { 'a', 'e', 'o', 't', 'l'};
 	char change2[] = { 'A', 'E', 'O', 'T', 'L'};
 	char replace[] = {'4', '3', '0', '7', '1'};
