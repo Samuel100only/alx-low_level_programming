@@ -10,15 +10,17 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int x;
 	int y;
+	int z;
 
 	x = 0;
 	while (*(dest + x) != '\0')
 	{
 	x++;
 	}
+	z = x;
 	for (y = 0; y < n; y++)
 	{
-	if (n >= x)
+		if (y > z)
 		{
 		break;
 		}
