@@ -16,9 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 	x++;
 	}
-	x = x + 1;
-	n = n + 1;
-	for (y = 0; y <= n; y++)
+	for (y = 0; y < n; y++)
 	{
 	*(dest + x) = *(src + y);
 	x++;
