@@ -18,6 +18,10 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	for (y = 0; y < n; y++)
 	{
+	if (n >= x)
+		{
+		break;
+		}
 	*(dest + x) = *(src + y);
 	x++;
 	}
