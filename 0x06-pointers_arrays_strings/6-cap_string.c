@@ -7,9 +7,10 @@
 char *cap_string(char *srt)
 {
 	int x;
+
 	for (x = 0; *(srt + x); x++)
 	{
-	if (*(srt + x) >= 32 && *(srt + x) <= 63 && *(srt + x) != '\t' )
+	if (*(srt + x) >= 32 && *(srt + x) <= 63 && *(srt + x) != '\t')
 	{
 	if (*(srt + x + 1) >= 97 && *(srt + x + 1) <= 122)
 	{
