@@ -13,9 +13,8 @@ char *_strcat(char *dest, char *src)
 	x = 0;
 	while (*(dest + x) != '\0')
 	{
-	x++
+	x++;
 	}
-	x = x + 2;
 	for (y = 0;*(src + y) != '\0'; y++)
 	{
 	*(dest + x) = *(src + y);
