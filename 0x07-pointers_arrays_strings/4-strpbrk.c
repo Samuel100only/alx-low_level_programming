@@ -12,9 +12,9 @@ char *_strpbrk(char *s, char *accept)
 
 	for (x = 0; *(s + x) != '\0'; x++)
 	{
-	for (y = 0; *(accept + x) != '\0'; y++)
+	for (y = 0; *(accept + y) != '\0'; y++)
 	{
-	if (*(accept + x) == *(s + x))
+	if (*(accept + y) == *(s + x))
 	{
 	return (s + x);
 	}
