@@ -7,15 +7,15 @@
 char *_strdup(char *str)
 {
 	char *p;
-	int x,y;
+	int x, y;
 
 	x = 0;
-	while(*(str + x) != '\0')
+	while (*(str + x) != '\0')
 	{
 	x++;
 	}
 	p = (char *)malloc(sizeof(char) * x);
-	if (p == NULL || str == NULL)
+	if (p == NULL && str == NULL)
 	{
 	return (NULL);
 	}
