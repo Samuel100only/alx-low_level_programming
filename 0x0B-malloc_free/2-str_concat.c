@@ -10,6 +10,10 @@ char *str_concat(char *s1, char *s2)
 	char *p;
 	int x, y, z;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	x = 0;
 	while (*(s1 + x))
 	{
@@ -25,13 +29,14 @@ char *str_concat(char *s1, char *s2)
 	{
 	return (NULL);
 	}
-	for (z = 0; z < x && s1 != NULL; z++)
+	for (z = 0; z < x; z++)
 	{
 	*(p + z) = *(s1 + z);
 	}
-	for (; z <= (x + y) && s2 != NULL; z++)
+	for (; z <= (x + y); z++)
 	{
 	*(p + z) = *(s2 + (z - x));
 	}
+	*(p + z) = '\0';
 	return (p);
 }
