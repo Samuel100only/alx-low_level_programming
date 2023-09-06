@@ -23,10 +23,10 @@ char *argstostr(int ac, char **av)
 	}
 	}
 	z = z + ac;
-	p = malloc(sizeof(char) * (z + 1));
+	p = malloc((sizeof(char) * z) + 1);
 	if (p == NULL)
 	{
-	return NULL;
+	return (NULL);
 	}
 	for (x = 0; x < ac; x++)
 	{
