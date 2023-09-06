@@ -38,7 +38,7 @@ char **strtow(char *str)
 	}
 	for (y = 0; y <= z; y++)
 	{
-	if (str[y] == '' || str[y] == '\0')
+	if (str[y] == 32 || str[y] == '\0')
 		{
 			if (b)
 			{
