@@ -12,7 +12,7 @@ char **strtow(char *str)
 
 	while (str[x])
 	{
-	if (str[x] == "")
+	if (str[x] == 32)
 		{
 		continue;
 		}
@@ -38,7 +38,7 @@ char **strtow(char *str)
 	}
 	for (y = 0; y <= z; y++)
 	{
-	if (str[y] == ' ' || str[y] == '\0')
+	if (str[y] == '' || str[y] == '\0')
 		{
 			if (b)
 			{
