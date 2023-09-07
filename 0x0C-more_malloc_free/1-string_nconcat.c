@@ -38,10 +38,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (x = 0; n < length2 && x < (length1 + n); x++)
 	{
 	p[y] = s2[x];
+	y++;
 	}
 	for (x = 0; n >= length2 && x < (length1 + length2); x++)
 	{
 	p[y] = s2[x];
+	y++;
 	}
 	p[x] = '\0';
 
