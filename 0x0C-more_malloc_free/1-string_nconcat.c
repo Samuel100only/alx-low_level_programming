@@ -9,7 +9,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	unsigned int length1 = 0, length2 = 0, y, totlen, x;
+	unsigned int length1 = 0, length2 = 0, y, totlen, x = 0;
 
 	while (s1 && s1[length1])
 	{
@@ -35,15 +35,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 	p[y] = s1[y];
 	}
-	for (x = 0; n < length2 && i < (length1 + n); x++)
+	for (x = 0; n < length2 && x < (length1 + n); x++)
 	{
 	p[y] = s2[x];
 	}
-	for (x = 0; n >= length2 && i < (length1 + length2); x++)
+	for (x = 0; n >= length2 && x < (length1 + length2); x++)
 	{
 	p[y] = s2[x];
 	}
-	p[totlen] = '\0';
+	p[x] = '\0';
 
 	return (p);
 }
