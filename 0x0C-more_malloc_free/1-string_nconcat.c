@@ -21,23 +21,22 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	if (n < length2)
-	totlen = length1 + n + 1;
+	totlen = length1 + n;
 	else
-	totlen = length1 + length2 + 1;
+	totlen = length1 + length2;
 
-	p = malloc(totlen);
+	p = malloc(totlen + 1);
 	if (p == NULL)
 	{
 	return (NULL);
 	}
-
 	for (y = 0; y < totlen; y++)
 	{
-		if (y <= (length1 - 1))
+		if (y <= length1 - 1)
 		{
 		p[y] = s1[y];
 		}
-		else if (y > (length1 - 1))
+		else if (y > length1 - 1)
 		p[y] = s2[y - length1];
 	}
 	p[totlen] = '\0';
