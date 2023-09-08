@@ -4,13 +4,13 @@
  * @ptr: the former allocated memory with the old size
  * @old_size: size of ptr
  * @new_size: the size of newly allocated memory
- * Return: the pointer address 
+ * Return: the pointer address
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *p, *Old_ptr;
 	unsigned int x;
-	
+
 	if (ptr == NULL)
 	{
 	ptr = malloc(new_size);
