@@ -9,13 +9,13 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	unsigned int length1 = 0, length2 = 0, y, totlen, x = 0;
+	unsigned int length1 = 0, length2 = 0, y, totlen;
 
 	while (s1 && s1[length1])
 	{
 	length1++;
 	}
-	while (s1 && s1[length2])
+	while (s2 && s2[length2])
 	{
 	length2++;
 	}
@@ -31,21 +31,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	return (NULL);
 	}
 
-	for (y = 0; y < length1; y++)
+	for (y = 0; y < totlen; y++)
 	{
-	p[y] = s1[y];
+		if (y <= length1)
+		{
+		p[y] = s1[y];
+		}
+		else
+		p[y] = s2[y - length1];
 	}
-	for (x = 0; n < length2 && x < (length1 + n); x++)
-	{
-	p[y] = s2[x];
-	y++;
-	}
-	for (x = 0; n >= length2 && x < (length1 + length2); x++)
-	{
-	p[y] = s2[x];
-	y++;
-	}
-	p[x] = '\0';
+	p[totlen] = '\0';
 
 	return (p);
 }
