@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdlib.h>
 /**
  * print_name - sent the string name to be print by function f
  * @name: the string to be pass on to f
